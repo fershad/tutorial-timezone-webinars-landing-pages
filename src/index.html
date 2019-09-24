@@ -1,0 +1,11 @@
+---
+layout: base.liquid
+---
+<div class="prose container">
+  <h1 class="h1">Select a time zone.</h1>
+  <ul class="links">
+  {% for zone in timezones %}
+    <li><a href="/{{ zone.location }}">{{ zone.location }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
