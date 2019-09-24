@@ -1,0 +1,19 @@
+---
+layout: base.liquid
+pagination:
+  data: timezones
+  size: 1
+  alias: zone
+permalink: /{{ zone.location }}/index.html
+---
+<h1>Tune in to our webinars!</h1>
+<div class="holder">
+{% for webinar in webinars %}
+		<div class="webinar">
+			<h2 class="title">{{ webinar.title }}</h2>
+			<p class="presenter">Presenter: {{ webinar.presenter }}</p>
+			<p class="description">{{ webinar.description }}</p>
+			<p class="time">{{ webinar.liveTime | addZone: zone | date: "%B %e, %Y at %l:%M %p" }}</p>
+		</div>
+{% endfor %}
+</div>

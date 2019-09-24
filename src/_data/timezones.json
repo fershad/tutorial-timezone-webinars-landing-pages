@@ -1,0 +1,7 @@
+[
+	{ "location": "Pacific/Auckland", "locale": "en-NZ", "name": "Auckland (UTC+13:00)"},
+	{ "location": "Australia/Sydney", "locale": "en-AU", "name": "Sydney (UTC+10:00)"},
+	{ "location": "Europe/London", "locale": "en-GB", "name": "London (UTC+00:00)"},
+	{ "location": "America/New_York", "locale": "en-US", "name": "New York (UTC-05:00)"},
+	{ "location": "America/Los_Angeles", "locale": "en-US", "name": "Los Angeles (UTC-10:00)"}
+]
